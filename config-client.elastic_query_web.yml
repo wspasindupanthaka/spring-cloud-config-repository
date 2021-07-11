@@ -18,6 +18,6 @@ spring:
     cache: false
 
 user-config:
-  user-name: pasindu
+  username: pasindu
   password: pasindu
   roles: USER
