@@ -9,10 +9,10 @@ elastic-query-service:
     content-type: 'application/json'
     accept-type: 'application/json'
     query-type: 'KAFKA_STATE_STORE'
-    query-from-kafka-state-store:
-      method: GET
-      uri: "http://localhost:9197/kafka-streams-service/get-word-count-by-word/{word}"
-      accept: ${elastic-query-service.webclient.accept-type}
+  query-from-kafka-state-store:
+    method: GET
+    uri: "http://localhost:9197/kafka-streams-service/get-word-count-by-word/{word}"
+    accept: ${elastic-query-service.webclient.accept-type}
 
 server:
   port: 9193
