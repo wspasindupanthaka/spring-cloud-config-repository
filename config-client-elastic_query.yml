@@ -28,8 +28,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9090/auth/realms/microservices-realm
-          jwk-set-uri: http://localhost:9090/auth/realms/microservices-realm/protocol/openid-connect/certs
+          issuer-uri: http://localhost:9190/auth/realms/microservices-realm
+          jwk-set-uri: http://localhost:9190/auth/realms/microservices-realm/protocol/openid-connect/certs
         client:
           registration:
             keycloak:
@@ -38,7 +38,7 @@ spring:
               authorizationGrantType: client_credentials
           provider:
             keycloak:
-              tokenUri: http://localhost:9090/auth/realms/microservices-realm/protocol/openid-connect/token
+              tokenUri: http://localhost:9190/auth/realms/microservices-realm/protocol/openid-connect/token
 
 elastic-query-config:
   text-field: text
