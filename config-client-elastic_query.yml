@@ -17,7 +17,7 @@ elastic-query-service:
 server:
   port: 9193
   servlet:
-    context-path: /elastic-query-service
+    context-path: /
 
 spring:
   cloud:
