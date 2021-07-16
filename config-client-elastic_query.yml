@@ -36,9 +36,9 @@ spring:
             client-id: 'elastic-query-service'
             client-secret: '08e1b1cd-b548-4d96-8c86-5b21aa8ec687'
             authorizationGrantType: client_credentials
-          provider:
-            keycloak:
-              tokenUri: http://localhost:9190/auth/realms/microservices-realm/protocol/openid-connect/token
+        provider:
+          keycloak:
+            tokenUri: http://localhost:9190/auth/realms/microservices-realm/protocol/openid-connect/token
 
 elastic-query-config:
   text-field: text
